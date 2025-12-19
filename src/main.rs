@@ -1,5 +1,8 @@
 #[tokio::main]
 async fn main() {
+
+    env_logger::init();
+
     let http_client = reqwest::ClientBuilder::new()
         .connection_verbose(true)
         .build()
